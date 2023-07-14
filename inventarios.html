@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventarios</title>
+    <script src="samit.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <h1>CENTRO DE AYUDA</h1>
+
+    <div class="buscador" id="buscador">
+        <input type="text" id="input-busqueda" placeholder="Que estas buscando..." width="100px">
+        <button onclick="buscar()">Buscar</button>
+        <div id="sugerenciasContainer" class="sugerencias-container"></div>
+    </div>
+    <div class="listadoInventario" id="listadoInventario"  >
+        <ol id="Productos">
+            <h3>Productos</h3>
+           
+            <li onclick="mostrarVideo('IYIvmliWATQ')">Creacion Productos</li>
+            <div class="youtube" id="player"></div>
+            <li>Informe Productos</li>
+            <li>Informe Saldo Productos</li>
+            <li>Informe Saldo Por Talla</li>
+            <li>Informe Saldo Por Lote</li>
+            <li>Precios Productos</li>
+            <li>Cambiar Precios FIjos </li>
+            <li>Asignar Lista Precio Clientes</li>
+            <li>Infomre Precios</li>
+            <li>Promocion De Productos</li>
+            <li>Imprimir Stiker Producto</li>
+            <li>Generar Codigo De Barras</li>
+            <li>Porductos Individualizados</li>
+            <li>Cotizaciones</li>
+            <li>Conteo Fisico De Productos</li>
+            <li>Cambiar Categoria De Producto</li>
+            <li>Costo Referencia</li>
+          <li>Asignar Productos A Ubicacion </li>
+        </ol>
+    
+      
+      <ol>
+        <h3>Movimientos</h3>
+
+        <li>Registro Compras</li>
+        <li>Registro Ventas</li>
+        <li>Nostas Internas</li>
+        <li>Notas De Consumo</li>
+        <li>Documento Soporte</li>
+        <li>Modifica Compras</li>
+        <li>Modifica Ventas</li>
+        <li onclick="toggleSublist()">Consulta Documento
+            <ul class="sublist">
+                <li>Movimineto Por Producto</li>
+                <li>Movimientos Por Talla De Producto</li>
+                <li>Compra Y Ventas</li>
+                <li>Informe De Compras Y Devoluciones </li>
+                <li>Informe De Compras Por Factura</li>
+                <li>Informe Diario De Ventas</li>
+                <li>Informe De Ventas Por Factura</li>
+                <li>Informe Facturas X Forma De Pago</li>
+                <li>Informe De Ventas X Tipo De Iva</li>
+                <li>Informe De Rentabilidad</li>
+                <li>Consulta Saldos De Productos</li>
+                <li>Balance De Productos</li>
+                <li>Rotacion De Productos</li>
+                <li>Calculo De Maximos Y MInimos</li>
+                <li>Venta Productos Mes A Mes</li>
+                <li>Venta Productos Por Factura</li>
+                <li>Ventas Totales Por Vendedor</li>
+                <li>Ventas Vendedor X Categoria</li>
+                <li>Ventas Impactos X Vendedor</li>
+                <li>Informe De Cartera X Cobrador</li>
+            </ul>
+        </li>
+        <li>Devolucion Compras</li>
+        <li>Devolucion Ventas</li>
+        <li>Traslados De Productos Entre Bodegas</li>
+        <li>Manejo Seriales</li>
+        <li>Productos Individualizados</li>
+      </ol>
+   
+        <ol>
+        <h3>Ordenes De Compras</h3>
+        <li>Orden Provedores</li>
+        <li>Orden de Clientes (Pedidos)</li>
+        <li>Consulta Pedidos</li>
+        </ol>
+     </div>
+    
+
+</body>
+</html>

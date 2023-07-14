@@ -1,0 +1,155 @@
+h1{
+    background-color:rgb(71, 138, 238);
+    border-radius: 55px;
+    width: auto;
+    right: 80px;
+    outline: auto;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.856);
+    animation-delay: 4s;
+    
+}
+.Container figcaption {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+   
+}
+/* ------------------------------------------------------------------------------------ */
+/* buscador */
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font: 50px;
+  }
+  
+  #input-busqueda {
+    width: 1000px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 15px;
+  }
+  
+  #input-busqueda:focus {
+    outline: none;
+    border: 2px solid blue;
+    font-size: 15px;
+  }
+  
+  button {
+    background-color: rgb(102, 166, 219);
+    color: rgb(255, 254, 254);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 45px;
+  }
+  
+  button:hover {
+    background-color: rgb(15, 224, 155);
+  }
+  /* ------------------------------ICONOWHATASAP-------------------------------------------------------------- */
+  .icon-container {
+    border-radius:20px;
+    width: 50px;
+  }
+
+/* _____________________________________sublistas______________________________________ */
+  .sublist {
+    margin-top: 4px;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 14px;    
+  }
+  
+  .sublist li {
+    font-size: 20px;
+    display: grid;
+    
+    
+  }
+  
+  .sublist li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* listado completo  */
+
+  .listadoInventario{
+    font-size: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+  }
+
+  .listadoInventario li:hover{
+    background-color: #addaff;
+    cursor: pointer;
+    border: 1px solid black;
+    
+  }
+
+
+  /* ___________________Contenedor de busqueda_____________________ */
+  .buscador {
+    position: relative;
+  }
+
+  #sugerenciasContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    padding: 8px;
+    display: none;
+  }
+
+  #sugerenciasContainer .sugerencia {
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+
+  #sugerenciasContainer .sugerencia:hover {
+    background-color: #e0e0e0;
+  }
+
+  /* videos youtbe y contenido */
+
+   .youtube {
+      border: 1px solid black;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(126, 214, 255);
+    } 
+    
+
+
+  

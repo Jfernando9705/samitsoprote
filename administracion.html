@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <script src="samit.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <h1>CENTRO DE AYUDA</h1>
+
+    <div class="buscador" id="buscador">
+        <input type="text" id="input-busqueda" placeholder="Que estas buscando..." width="100px">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+    
+    <ul>
+        <li>Elemento 1</li>
+        <li onclick="toggleSublist()">Elemento 2
+          <ul class="sublist">
+            <li>Subelemento 2.1</li>
+            <li>Subelemento 2.2</li>
+            <li>Subelemento 2.3</li>
+          </ul>
+        </li>
+        <li>Elemento 3</li>
+      </ul>
+      <div class="listadoInventario" id="listadoInventario">
+        <ol>
+          <li onclick="mostrarVideo('IYIvmliWATQ')">Gangnam Style</li>
+          <!-- Otros elementos de lista -->
+        </ol>
+        <div id="player"></div>
+      </div>
+      
+      <script>
+        function mostrarVideo(videoId) {
+          var playerDiv = document.getElementById('player');
+          playerDiv.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        }
+      </script>
+      
+      
+            
+    </body>
+    </html>
